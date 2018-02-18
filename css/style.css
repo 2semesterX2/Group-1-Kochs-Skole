@@ -1,34 +1,55 @@
 /* Based on template from csslayoutgenerator.com */
 
-body {
-  font: 12px/18px Arial, sans-serif;
+* {
+    max-width: 100%;
+}
+
+body  {
+    background-color: #FFFEFB;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+main {
+
 }
 
 strong {
   font-weight: bold;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: bold;
-}
-
 h1 {
-  font-size: 1.5em;
+  font-size: 100px;
+    line-height: 1em;
+    font-family: "Lato" ;
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 45px;
+    line-height: 1.5em;
+    font-family: "Lato";
 }
 
-#wrapper {
-  max-width: 1000px;
-  margin: 0 auto;
+h3 {
+    font-family: "Indie Flower"; 
+    font-size: 20px; 
+    line-height: 1.5em;
 }
+
+p {
+    font: 24px Arial, sans-serif;
+    font-family: "Open Sans";
+    line-height: 1.2em;
+}
+
+
+
+/* Fonts 
+-----------------------------------------------------------------------------------------*/
+
+font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Indie Flower', cursive; 
 
 
 /* Header
@@ -50,22 +71,141 @@ nav {
 
 main {}
 
-#article1 {
-  background-color: lightgoldenrodyellow;
-  padding: 2%;
+.audio-scroll {
+    height: 70vh;
+    margin-top: 30vh;
 }
 
-#article2 {
-  background-color: aliceblue;
-  padding: 2%;
+.audio-scroll-items { 
+display: flex; 
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
+.audio-scroll-items * {
+    padding: 0 1em 0 1em;
+}
+
+/* Embedded blooper reel ---------------------------------------------------- */
+
+.blooper-reel {
+    position: relative;
+    height: 500vh; /* the bigger the nubmer, the more scrolling needed */
+}
+
+.overlay-text {
+    color: white;
+}
+
+.overlay-text > * {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 2rem;
+    animation: fadeIn;
+    animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#myVideo {
+    width: 100%; 
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: -5;
+}
+
+.overlay-color {
+    background-color: rgba(0, 0, 0, .3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    transition-delay: 2s;
+    z-index: -2;
+}
+
+.overlay-color.show {
+    opacity: 1;
+}
+
+
+
+/* Article Text -----------------------------------------------------------------------*/
+
+.text {
+    padding: 0 20% 0 20%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text div {
+    display: flex;
+    flex-direction: row;
+}
+
+.text img {
+   max-width: 100%;
+}
+    
+/*  Triangle Elements  --------------------------------*/
+
+#orange-triangle {
+    position: relative;
+    left: 60px;
+    top: 0px;
+}
+
+.text {
+    position: relative;
+}
+
+#yellow-triangle {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 350px;
+    width: 1000px;
+}
+
+
+/*  Youtube Video  --------------------------------*/
+
+.youtube-player {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  /* optional */
+  width: 100%;
+  height: 100%; 
+}
 
 /* Footer
 -----------------------------------------------------------------------------*/
 
 footer {
-  height: auto;
-  background-color: darkkhaki;
-  padding: 2%;
+
 }
+
