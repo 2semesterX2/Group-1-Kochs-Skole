@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8" />
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
-    <title>Kochs International Webdoc</title>
+    <title>Kochs International Webdok</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
@@ -17,8 +17,6 @@
     <!-- these are fonts -->
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lato:700|Open+Sans" rel="stylesheet">
 
-    <!-- javascript -->
-    <script src="js/script.js"></script>
 
 </head>
 
@@ -44,8 +42,8 @@
         <!-- end audio-scroll -->
 
         <!-- this is the landing page blooper reel -->
-        <section>
-            <video id="myVideo" controls> 
+        <section class="blooper-reel">
+            <video id="myVideo"> 
                     <source src="video/kochs-intro.mp4" type= "video/mp4">
                     <source src="kochs-intro.webm"
                     type="video/webm">
@@ -54,9 +52,12 @@
 
 
             <div class="overlay-text">
-                <h1>The International Classroom</h1>
-                <h2>Where learning is more than textbook.</h2>
+                <!-- data-start and data-end for timing -->
+                <h1 data-start=".1" data-end=".4">The <br>International<br> Classroom</h1>
+                <h2 data-start=".6" data-end=".9">Where learning is more than textbook.</h2>
             </div>
+            
+            <div class="overlay-color"></div>
         </section>
         <!-- end first blooper reel -->
 
@@ -66,11 +67,11 @@
 
             <div>
                 <h2>Joining a classroom in a new country can be an exciting adventure.</h2>
-                <img id="orange-triangle" src="img/orangetriangle.svg" alt="Orange Triangle Shape - Broken Logo">
+                <img id="orange-triangle" src="img/orangetriangle.svg" alt="Orange Triangle Shape - Broken Logo" data-direction="right">
             </div>
 
             <div>
-                <img id="purple-triangle" src="img/purpletriangle.svg" alt="Purple Triangle Shape - Broken Logo">
+                <img id="purple-triangle" src="img/purpletriangle.svg" alt="Purple Triangle Shape - Broken Logo" data-direction="left">
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
             </div>
 
@@ -78,7 +79,7 @@
 
             <div>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-                <img id="blue-triangle" src="img/bluetriangle.svg" alt="Blue Triangle Shape - Broken Logo">
+                <img id="blue-triangle" src="img/bluetriangle.svg" alt="Blue Triangle Shape - Broken Logo" data-direction="right">
             </div>
         </section>
         <!-- end text -->
@@ -91,16 +92,14 @@
 
         <section class="text">
             <div>
-                <img id="green-triangle" src="img/greentriangle.svg" alt="Green Triangle Shape - Broken Logo">
+                <img id="green-triangle" src="img/greentriangle.svg" alt="Green Triangle Shape - Broken Logo" data-direction="left">
 
                 <h2>Joining a classroom in a new country can be an exciting adventure.</h2>
             </div>
 
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
 
-
-            <div>
-                <picture>
+                <picture class="parallax">
                     <source srcset="img/mobile-kochs-skole-1.webp" media="(max-width: 400px)" type="image/webp">
                     <source srcset="img/mobile-kochs-skole-1.jpg" media="(max-width: 400px)" type="image/jpeg">
                     <source srcset="img/desktop-kochs-skole-1.webp" type="image/webp">
@@ -108,12 +107,10 @@
                     <img src="img/desktop-kochs-skole-1.jpg" alt="Three children blowing bubbles in a classroom at Kochs Skole">
                 </picture>
 
-                <img id="yellow-triangle" src="img/yellowtriangle.svg" alt="Yellow Triangle Shape - Broken Logo">
-
-            </div>
+                <img id="yellow-triangle" src="img/yellowtriangle.svg" alt="Yellow Triangle Shape - Broken Logo" data-direction="right">
 
             <div>
-                <img src="img/redtriangle.svg" alt="Yellow Triangle Shape - Broken Logo">
+                <img src="img/redtriangle.svg" alt="Yellow Triangle Shape - Broken Logo" data-direction="left">
 
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
 
@@ -133,7 +130,7 @@
             <div>
                 <h2>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."</h2>
 
-                <img id="grey-triangle" src="img/greytriangle.svg" alt="Grey Triangle Shape - Broken Logo">
+                <img id="grey-triangle" src="img/greytriangle.svg" alt="Grey Triangle Shape - Broken Logo" data-direction="right">
             </div>
         </section>
         <!-- end text -->
@@ -172,8 +169,10 @@
     <footer>
     </footer>
     <!-- .footer -->
-
-    <!-- .wrapper -->
+    
+    
+    <!-- javascript -->
+    <script src="js/script.js"></script>
 
 </body>
 </html>
