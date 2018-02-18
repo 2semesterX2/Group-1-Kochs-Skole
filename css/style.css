@@ -32,16 +32,22 @@ h2 {
 
 h3 {
     font-family: "Indie Flower"; 
-    font-size: 24px; 
+    font-size:18px; 
     line-height: 1.5em;
 }
 
 p {
-    font: 24px Arial, sans-serif;
+    font: 18px Arial, sans-serif;
     font-family: "Open Sans";
-    line-height: 1.2em;
+    line-height: 1.5em;
+    padding: .7em 0 .7em 0;
 }
 
+.bold-text {
+    font-family: "Lato";
+    font-size: 24px;
+    line-height: 1.5em;
+}
 
 
 /* Fonts 
