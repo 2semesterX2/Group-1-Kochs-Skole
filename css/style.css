@@ -1,0 +1,126 @@
+/* Based on template from csslayoutgenerator.com */
+
+body  {
+    background-color: #FFFEFB;
+}
+
+main {
+
+}
+
+strong {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 50px;
+    line-height: 1em;
+    font-family: "Lato" ;
+}
+
+h2 {
+  font-size: 25px;
+    line-height: 1.5em;
+    font-family: "Lato";
+}
+
+h3 {
+    font-family: "Indie Flower"; 
+    font-size: 20px; 
+    line-height: 1.5em;
+}
+
+p {
+    font: 15px/18px Arial, sans-serif;
+    font-family: "Open Sans";
+    line-height: 1.1em;
+}
+
+
+
+/* Fonts 
+-----------------------------------------------------------------------------------------*/
+
+font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Indie Flower', cursive; 
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+
+header {
+  height: auto;
+  background-color: coral;
+  padding: 2%;
+}
+
+nav {
+  text-align: right;
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+
+main {}
+
+.audio-scroll {
+    height: 70vh;
+    margin-top: 30vh;
+}
+
+.audio-scroll-items { 
+display: flex; 
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.audio-scroll-items * {
+    padding: 0 1em 0 1em;
+}
+
+/* Embedded blooper reel ---------------------------------------------------- */
+
+#myVideo {
+    width: 100%; 
+}
+
+/* Article Text -----------------------------------------------------------------------*/
+
+.text {
+    margin: 0 20% 0 20%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.text img {
+    width: 500px;
+    align-self: flex-start;
+}
+    
+/*  Triangle Elements  --------------------------------*/
+
+#orange-triangle {
+    position: relative;
+    left: 60px;
+}
+
+/*  Youtube Video  --------------------------------*/
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+
+footer {
+
+}

@@ -9,102 +9,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
+
+    <!-- styles -->
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    
-    <!-- these are fonts --> 
+
+    <!-- these are fonts -->
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lato:700|Open+Sans" rel="stylesheet">
-    
+
+    <!-- javascript -->
+    <script src="js/script.js"></script>
+
 </head>
 
 <body>
 
-    <div id="wrapper">
+    <header class="header">
+    </header>
+    <!-- .header-->
 
-        <header class="header">
-           
-            
+    <main class="content">
 
-        </header>
-        <!-- .header-->
+        <!-- This is the audio-scroll landing page -->
+        <section class="audio-scroll">
+            <div class="audio-scroll-items">
+                <img src="img/sound.svg" alt="Sound warning">
+                <img src="img/mouse.svg" alt="Mouse warning">
+            </div>
+            <div class="audio-scroll-items">
+                <h3>Audio is included</h3>
+                <h3>Scroll to begin</h3>
+            </div>
+        </section>
+        <!-- end audio-scroll -->
 
-        <main class="content">
-            <article id="article1">
-                <section>
-                <video controls>
-                <source src="images/bloopers.mp4" type="video/mp4">
-                <source src="movie.ogg" type="video/ogg">
-                  Your browser does not support the video tag.
+        <!-- this is the landing page blooper reel -->
+        <section>
+            <video id="myVideo" controls> 
+                    <source src="video/kochs-intro.mp4" type= "video/mp4">
+                    <source src="kochs-intro.webm"
+                    type="video/webm">
+                    Your browser does not support the video tag.
                 </video>
-                <div class="overlay-text">
-            
-                    <h1>Kochs International</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                </div>
-            </section>
-
-            <section>
-                <iframe src="https://www.youtube.com/embed/cfPXusnPfLw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-            </section>
-
-            <section>
-                <video width="1280" height="720" controls>
-                <source src="movie.mp4" type="video/mp4">
-                <source src="movie.ogg" type="video/ogg">
-                  Your browser does not support the video tag.
-                </video>
-                <h2><q>q is for quote</q></h2>
-            </section>
-
-            <section>
-                <img src="parallax.jpg" alt="parallax">
-
-                <audio controls>
-                <source src="horse.ogg" type="audio/ogg">
-                <source src="horse.mp3" type="audio/mpeg">
-                 Your browser does not support the audio element.
-                </audio>
-            </section>
-
-            <section>
-                <video width="1280" height="720">
-                <source src="movie.mp4" type="video/mp4">
-                <source src="movie.ogg" type="video/ogg">
-                 Your browser does not support the video tag.
-                </video>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 
-            </section>
+            <div class="overlay-text">
+                <h1>The International Classroom</h1>
+                <h2>Where learning is more than textbook.</h2>
+            </div>
+        </section>
+        <!-- end first blooper reel -->
 
-            <section>
-                <a href="http://www.kochs.dk/kontakt/"></a>
-                <button type="button">Click Me!</button>
-            </section>
 
-            </article>
+        <!-- text -->
+        <section class="text">
 
-            
-        </main>
-        <!-- .content -->
+            <div>
+                <h2>Joining a classroom in a new country can be an exciting adventure.</h2>
+                <img id="orange-triangle" src="img/orangetriangle.svg" alt="Orange Triangle Shape - Broken Logo">
+            </div>
 
-        <footer class="footer">
-            <h2>Footer:</h2>
-            <p>Copyrights, address etc. - Stuff you repeat on all your pages ...</p>
-            <address>jsj@baaa.dk</address>
-            <!-- Based on template from csslayoutgenerator.com -->
+            <div>
+                <img id="purple-triangle" src="img/purpletriangle.svg" alt="Purple Triangle Shape - Broken Logo">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+            </div>
 
-        </footer>
-        <!-- .footer -->
+            <h2>Joining a classroom in a new country can be an exciting adventure.</h2>
 
-    </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                <img id="blue-triangle" src="img/bluetriangle.svg" alt="Blue Triangle Shape - Broken Logo">
+            </div>
+        </section>
+        <!-- end text -->
+
+        <!-- start of "Hi My Name Is..." -->
+        
+        <div class="youtube-player">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cfPXusnPfLw?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+        </div>
+
+        <section class="text">
+            <div>
+                <img id="green-triangle" src="img/greentriangle.svg" alt="Green Triangle Shape - Broken Logo">
+
+                <h2>Joining a classroom in a new country can be an exciting adventure.</h2>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+
+
+            <div>
+                <picture>
+                    <source srcset="img/mobile-kochs-skole-1.webp" media="(max-width: 400px)" type="image/webp">
+                    <source srcset="img/mobile-kochs-skole-1.jpg" media="(max-width: 400px)" type="image/jpeg">
+                    <source srcset="img/desktop-kochs-skole-1.webp" type="image/webp">
+                    <source srcset="img/desktop-kochs-skole-1.jpg" type="image/jpeg">
+                    <img src="img/desktop-kochs-skole-1.jpg" alt="Three children blowing bubbles in a classroom at Kochs Skole">
+                </picture>
+
+                <img id="yellow-triangle" src="img/yellowtriangle.svg" alt="Yellow Triangle Shape - Broken Logo">
+
+            </div>
+
+            <div>
+                <img src="img/redtriangle.svg" alt="Yellow Triangle Shape - Broken Logo">
+
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+
+            </div>
+
+        </section>
+        <!-- end text -->
+
+
+        <!-- Youtube Video: Paul Interview -->
+        <div class="youtube-player">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cfPXusnPfLw?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+        </div>
+        <!-- End Paul Interview -->
+
+        <section class="text">
+            <div>
+                <h2>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."</h2>
+
+                <img id="grey-triangle" src="img/greytriangle.svg" alt="Grey Triangle Shape - Broken Logo">
+            </div>
+        </section>
+        <!-- end text -->
+
+
+        <!-- Youtube Video: Kids Interview -->
+        <div class="youtube-player">
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/cfPXusnPfLw?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+        </div>
+
+        <!-- End Kids Interview -->
+
+        <section class="text">
+            <h2>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod </h2>
+
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+        </section>
+        <section class="text">
+            <div>
+                <h2>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</h2>
+
+                <img id="logo" src="img/logo.svg" alt="Kochs Skole Colorful Logo">
+            </div>
+        </section>
+        <!-- end text -->
+
+
+        <section class="call-to-action">
+            <a href="http://www.kochs.dk/kontakt/"></a>
+            <button type="button">Find out more about the International Program</button>
+        </section>
+
+    </main>
+    <!-- .content -->
+
+    <footer>
+    </footer>
+    <!-- .footer -->
+
     <!-- .wrapper -->
 
 </body>
-
 </html>
