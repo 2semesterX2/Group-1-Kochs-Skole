@@ -38,8 +38,8 @@ function stopVideo() {
 function animateImage() {
     var offsetTop = parallaxImage.getBoundingClientRect().top;
     var percentage = offsetTop / windowHeight * 100;
-    if (percentage < 50) percentage = 50;
-    var translateValue = (percentage - 50) * 3;
+    if (percentage < 20) percentage = 20;
+    var translateValue = (percentage - 20) * 3;
     
     parallaxImage.style["transform"] = `translateX(${translateValue}%)`;
 }
