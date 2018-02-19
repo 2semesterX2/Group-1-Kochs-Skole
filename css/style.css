@@ -283,6 +283,38 @@ iframe {
   height: 100%; 
 }
 
+<<<<<<< HEAD
+/* Button */ 
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: "Lato" ;
+}
+
+.call-to-action {
+    padding: 70px 0 70px 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+=======
+/* mobile version -----------------------------*/
+
+#mobile {
+    display: none;
+}
+
+>>>>>>> f5a77da0ea55524b3a9828b484c19655103ba2f0
 /* Footer
 -----------------------------------------------------------------------------*/
 
@@ -290,3 +322,51 @@ footer {
 
 }
 
+<<<<<<< HEAD
+
+
+/*--------------------------------------------------------------
+MEDIA QUERIES 
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+Screens layout max. 950px
+--------------------------------------------------------------*/
+=======
+@media only screen and (max-width: 900px) {
+    
+    .content {
+        display: none;
+    }
+    
+    #mobile {
+        display: flow-root;
+    }
+    
+    #green-triangle {
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+    top: 0;
+    width: 600px;
+}
+    
+    #yellow-triangle {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    width: 1000px;
+}
+    #mobile-text {
+    font-family: "Lato"; 
+    font-size:23px; 
+    line-height: 1em;
+    text-align: center;
+    margin-top: 11em;
+    line-height: 35px;
+        
+    }   
+    
+}
+>>>>>>> f5a77da0ea55524b3a9828b484c19655103ba2f0
