@@ -70,7 +70,30 @@ function animateText() {
     });
 }
 
+//automatic video 
 
+var myPauseTime=0; // to keep track of where video was paused
+var myVid = document.getElementById("myvideo");
+window.addEventListener("scroll",
+ function(){
+if (elFllVsbl(myVid))
+{ //
+if (!(myVid.currentTime>0) || (myVid.currentTime==myPauseTime)){
+myVid.play();
+}
+} else {
+myVid.pause();
+myPauseTime = myVid.currentTime;
+}
+ }
+)
+function elFllVsbl(el){ // used for all tests of visibility
+return (el.getBoundingClientRect().top>=0 &&
+el.getBoundingClientRect().bottom<window.innerHeight)
+}
+
+
+// automatic sound 
 window.addEventListener("scroll",
  function(){
 var mySound= document.getElementById("myaudio");
