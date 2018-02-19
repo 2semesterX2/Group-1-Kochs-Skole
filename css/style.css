@@ -92,9 +92,23 @@ main {}
     padding: 2em;
 }
 
-#mouse {
- 
+/* Apply animation to scroll items */
+#audio-scroll-icons {
+    animation-name: zoom;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
+
+/* The animation code */
+@keyframes zoom {
+  0%   {transform: scale(1);}
+25%  {transform: scale(1.05);}
+50%  {transform: scale(1);}
+75%  {transform: scale(1.05);}
+100% {transform: scale(1);}
+}
+
+
 
 /* Embedded blooper reel ---------------------------------------------------- */
 
