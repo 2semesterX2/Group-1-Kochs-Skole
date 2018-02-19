@@ -69,3 +69,23 @@ function animateText() {
         
     });
 }
+
+
+window.addEventListener("scroll",
+ function(){
+var mySound= document.getElementById("myaudio");
+if(elFllVsbl(mySound.parentElement)) { // parent elementFullyVisible
+if (!(mySound.currentTime>0)){ // test needed for preventing stuttering
+mySound. play();
+}
+} else {
+mySound.pause();
+mySound.currentTime=0; // rewind sound
+}
+}
+)
+// more on next page
+function elFllVsbl(el){
+return (el.getBoundingClientRect().top>=0 &&
+el.getBoundingClientRect().bottom<window.innerHeight)
+}
