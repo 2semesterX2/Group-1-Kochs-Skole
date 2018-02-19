@@ -281,6 +281,12 @@ iframe {
   height: 100%; 
 }
 
+/* mobile version -----------------------------*/
+
+#mobile {
+    display: none;
+}
+
 /* Footer
 -----------------------------------------------------------------------------*/
 
@@ -288,3 +294,39 @@ footer {
 
 }
 
+@media only screen and (max-width: 900px) {
+    
+    .content {
+        display: none;
+    }
+    
+    #mobile {
+        display: flow-root;
+    }
+    
+    #green-triangle {
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+    top: 0;
+    width: 600px;
+}
+    
+    #yellow-triangle {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    width: 1000px;
+}
+    #mobile-text {
+    font-family: "Lato"; 
+    font-size:23px; 
+    line-height: 1em;
+    text-align: center;
+    margin-top: 11em;
+    line-height: 35px;
+        
+    }   
+    
+}
