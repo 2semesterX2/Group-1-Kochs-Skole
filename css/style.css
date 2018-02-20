@@ -333,6 +333,10 @@ footer {
         height: 100vh;
     }
     
+    #myaudio {
+        display: none;
+    }
+    
     #green-triangle {
     position: absolute;
     z-index: -1;
