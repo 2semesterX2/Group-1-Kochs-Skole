@@ -188,6 +188,13 @@ main {}
    max-width: 100%;
 }
 
+span {
+    position: absolute;
+    font-size: 150px;
+    right: 400px;
+top: 60px;
+    color: #009245; 
+}
 
 /* Picture -----------------------------------------------------------------------*/
 .parallax {
