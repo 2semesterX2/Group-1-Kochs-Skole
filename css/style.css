@@ -188,14 +188,6 @@ main {}
    max-width: 100%;
 }
 
-span {
-    position: absolute;
-    font-size: 150px;
-    right: 400px;
-top: 60px;
-    color: #009245; 
-}
-
 /* Picture -----------------------------------------------------------------------*/
 .parallax {
     padding: 2em 0 2em 0;
@@ -291,11 +283,10 @@ iframe {
     background-color: #4CAF50; /* Green */
     color: white;
     padding: 30px 30px 30px 30px;
-
     text-decoration: none;
     display: inline-block;
     font-size: 24px;
-    margin: 4px 2px;
+    margin: 40px 2px;
     cursor: pointer;
     font-family: "Lato" ;
 }

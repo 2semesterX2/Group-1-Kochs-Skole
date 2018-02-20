@@ -35,15 +35,6 @@ function stopVideo() {
     blooperReel.pause();
 }
 
-function animateImage() {
-    var offsetTop = parallaxImage.getBoundingClientRect().top;
-    var percentage = offsetTop / windowHeight * 100;
-    if (percentage < 20) percentage = 20;
-    var translateValue = (percentage - 20) * 3;
-    
-    parallaxImage.style["transform"] = `translateX(${translateValue}%)`;
-}
-
 function animateText() {
     var percentage = (window.scrollY - blooperContainerOffset) / (parseInt(blooperContainerHeight) - windowHeight); //crazy math, dont edit
     
@@ -64,10 +55,19 @@ function animateText() {
             
         }
         
-    
         heading.style["display"] = displayValue;
         
     });
+}
+
+//this is the image
+function animateImage() {
+    var offsetTop = parallaxImage.getBoundingClientRect().top;
+    var percentage = offsetTop / windowHeight * 100;
+    if (percentage < 20) percentage = 20;
+    var translateValue = (percentage - 20) * 3;
+    
+    parallaxImage.style["transform"] = `translateX(${translateValue}%)`;
 }
 
 // automatic sound 
@@ -84,7 +84,7 @@ mySound.currentTime=0; // rewind sound
 }
 }
 )
-// more on next page
+
 function elFllVsbl(el){
 return (el.getBoundingClientRect().top>=0 &&
 el.getBoundingClientRect().bottom<window.innerHeight)
