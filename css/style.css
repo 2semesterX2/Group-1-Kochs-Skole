@@ -283,8 +283,6 @@ iframe {
   height: 100%; 
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 /* Button */ 
 
 button {
@@ -308,19 +306,6 @@ button {
 }
 
 
-=======
-=======
->>>>>>> f5a77da0ea55524b3a9828b484c19655103ba2f0
-/* mobile version -----------------------------*/
-
-#mobile {
-    display: none;
-}
-
-<<<<<<< HEAD
->>>>>>> f5a77da0ea55524b3a9828b484c19655103ba2f0
-=======
->>>>>>> f5a77da0ea55524b3a9828b484c19655103ba2f0
 /* Footer
 -----------------------------------------------------------------------------*/
 
@@ -328,20 +313,15 @@ footer {
 
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+/* Mobile Solution */ 
+
+#mobile {
+    display: none;
+}
 
 
-/*--------------------------------------------------------------
-MEDIA QUERIES 
---------------------------------------------------------------*/
+/* Media Query Mobile Solution */  
 
-/*--------------------------------------------------------------
-Screens layout max. 950px
---------------------------------------------------------------*/
-=======
-=======
->>>>>>> f5a77da0ea55524b3a9828b484c19655103ba2f0
 @media only screen and (max-width: 900px) {
     
     .content {
@@ -349,7 +329,8 @@ Screens layout max. 950px
     }
     
     #mobile {
-        display: flow-root;
+        display: block;
+        height: 100vh;
     }
     
     #green-triangle {
@@ -368,18 +349,10 @@ Screens layout max. 950px
     width: 1000px;
 }
     #mobile-text {
-    font-family: "Lato"; 
-    font-size:23px; 
+    font-size:26px; 
     line-height: 1em;
     text-align: center;
-    margin-top: 11em;
+    margin:35vh 2em;
     line-height: 35px;
-        
     }   
-    
-<<<<<<< HEAD
 }
->>>>>>> f5a77da0ea55524b3a9828b484c19655103ba2f0
-=======
-}
->>>>>>> f5a77da0ea55524b3a9828b484c19655103ba2f0

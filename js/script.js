@@ -1,15 +1,12 @@
 var windowHeight = window.innerHeight;
 
 var blooperContainer = document.querySelector('.blooper-reel');
-
 var blooperContainerOffset = blooperContainer.offsetTop;
-
 var blooperContainerHeight = window.getComputedStyle(blooperContainer).getPropertyValue('height');
 
 var blooperReel = document.getElementById("myVideo");
 
 var overlay = document.querySelector('.overlay-color');
-
 var headings = Array.from(document.querySelectorAll('.overlay-text > *'));
 
 var parallaxImage = document.querySelector('.parallax');
