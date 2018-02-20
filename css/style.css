@@ -322,6 +322,7 @@ footer {
 
 /* Media Query Mobile Solution */  
 
+
 @media only screen and (max-width: 1100px) {
     
     .content {
@@ -329,11 +330,11 @@ footer {
     }
     
     #mobile {
-        display: block;
+        display: flow-root;
         height: 100vh;
     }
     
-    #myaudio {
+    audio {
         display: none;
     }
     
