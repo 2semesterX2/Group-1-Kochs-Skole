@@ -189,7 +189,6 @@ main {}
 }
 
 
-
 /* Picture -----------------------------------------------------------------------*/
 .parallax {
     padding: 2em 0 2em 0;
@@ -258,10 +257,6 @@ main {}
     width: 300px;
 }
 
-#logo {
-    width: 1000px;
-}
-
 
 /*  Youtube Video  --------------------------------*/
 
@@ -283,14 +278,13 @@ iframe {
   height: 100%; 
 }
 
-/* Button */ 
+/* Call to Action */ 
 
-button {
+.button {
     background-color: #4CAF50; /* Green */
-    border: none;
     color: white;
-    padding: 15px 32px;
-    text-align: center;
+    padding: 30px 30px 30px 30px;
+
     text-decoration: none;
     display: inline-block;
     font-size: 24px;
@@ -300,11 +294,30 @@ button {
 }
 
 .call-to-action {
-    padding: 70px 0 70px 0;
     display: flex;
     justify-content: center;
+    padding: 3em;
 }
 
+/*Quote + Logo Container */ 
+
+#logo {
+    height: 500px;
+}
+
+#final-quote { 
+font-family: "Indie Flower"; 
+    font-size: 45px;
+    text-align: left;
+    max-width: 60%;
+    align-self: center;
+    padding: 0 1em 0 0;
+}
+
+
+.final-container {
+    margin: 0 3em;
+}
 
 /* Footer
 -----------------------------------------------------------------------------*/
